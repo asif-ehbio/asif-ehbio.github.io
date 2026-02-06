@@ -3,86 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asif Chowdhury | EHB Hub</title>
+    <title>Asif Chowdhury | EHB CEO</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        :root { --cyan: #00ffcc; --dark: #050505; --gray: #0f0f0f; --neon: 0 0 8px #00ffcc; }
-        body { background: var(--dark); color: #e0e0e0; font-family: 'Courier New', monospace; margin: 0; padding: 15px; line-height: 1.5; }
-        .terminal-header { text-align: center; padding: 40px 0; border-bottom: 1px solid #222; margin-bottom: 30px; }
-        h1 { color: var(--cyan); text-shadow: var(--neon); letter-spacing: 3px; font-size: 2em; margin: 10px 0; }
-        .box { border: 1px solid #333; margin-bottom: 25px; padding: 20px; border-radius: 4px; background: var(--gray); position: relative; }
-        .box-title { position: absolute; top: -12px; left: 15px; background: var(--dark); padding: 0 10px; color: var(--cyan); font-weight: bold; font-size: 0.9em; }
-        .price { color: var(--cyan); font-weight: bold; }
-        .team-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); gap: 8px; margin-top: 15px; }
-        .member { background: #1a1a1a; padding: 5px; border-radius: 2px; font-size: 0.75em; color: #aaa; text-align: center; border: 0.5px solid #222; }
-        .btn-container { display: flex; flex-direction: column; gap: 12px; align-items: center; margin: 30px 0; }
-        .btn { width: 100%; max-width: 320px; padding: 14px; text-align: center; color: black; background: var(--cyan); text-decoration: none; font-weight: bold; border-radius: 4px; border: none; transition: 0.3s; }
-        .btn-alt { background: transparent; color: var(--cyan); border: 1px solid var(--cyan); }
-        .btn:hover { box-shadow: var(--neon); transform: translateY(-2px); }
-        .footer { text-align: center; color: #444; font-size: 0.7em; margin-top: 50px; border-top: 1px solid #222; padding-top: 20px; }
+        :root { --neon: #00ffcc; --purple: #bc13fe; --bg: #050508; }
+        body { 
+            background: radial-gradient(circle at center, #0a0a1a 0%, var(--bg) 100%);
+            color: #e0e0e0; font-family: 'Segoe UI', sans-serif; margin: 0; padding: 15px;
+        }
+        .header { text-align: center; padding: 50px 0; border-bottom: 2px solid #1a1a2e; }
+        h1 { color: var(--neon); text-shadow: 0 0 15px var(--neon); font-size: 2.2em; margin: 5px; }
+        
+        .section-title { color: var(--purple); text-shadow: 0 0 10px var(--purple); margin: 30px 0 15px; border-left: 4px solid var(--purple); padding-left: 10px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 15px; }
+        
+        .price-card { 
+            background: rgba(15, 15, 30, 0.8); border: 1px solid #1a1a2e; 
+            padding: 20px; border-radius: 10px; transition: 0.3s;
+        }
+        .price-card:hover { border-color: var(--neon); box-shadow: 0 0 15px rgba(0, 255, 204, 0.2); }
+        .service-item { display: flex; justify-content: space-between; border-bottom: 1px solid #222; padding: 8px 0; font-size: 0.9em; }
+        .price { color: var(--neon); font-weight: bold; }
+
+        /* ID Removal Table */
+        .removal-table { width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 0.8em; }
+        .removal-table th, .removal-table td { border: 1px solid #222; padding: 8px; text-align: center; }
+        .removal-table th { background: #111; color: var(--purple); }
+
+        .btn-hub { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 40px; }
+        .btn { padding: 12px 25px; border-radius: 5px; text-decoration: none; font-weight: bold; color: black; background: var(--neon); transition: 0.3s; }
+        .btn-alt { background: transparent; border: 1px solid var(--purple); color: var(--purple); }
     </style>
 </head>
 <body>
 
-    <div class="terminal-header">
-        <div style="color: var(--cyan); font-size: 0.8em; margin-bottom: 10px;">[ SYSTEM ACCESS GRANTED ]</div>
-        <h1>ASÍF CHOWDHURY</h1>
-        <p>CEO of Ethical Hacker-Bd Official (EHB)</p>
-        <div style="font-size: 0.9em; color: #888;">SSC 2026 Batch | Cyber Security Specialist</div>
+    <div class="header">
+        <h1>ASIF CHOWDHURY</h1>
+        <p>CEO, Ethical Hacker-Bd Official (EHB)</p>
+        <div style="font-size: 0.8em; color: #888;">Singapore 🇸🇬 | Dhaka | Panchgarh</div>
     </div>
 
-    <div class="box">
-        <span class="box-title">👤 PERSONAL IDENTITY</span>
-        • <b>Full Name:</b> Shiam Hossain Jidan<br>
-        • <b>Nickname:</b> Asif Chowdhury<br>
-        • <b>Status:</b> Student | Single<br>
-        • <b>Global Base:</b> Singapore 🇸🇬 | Dhaka | Panchgarh
-    </div>
-
-    <div class="box">
-        <span class="box-title">🛡️ EXPERT SERVICES</span>
-        • FB/IG/WA Server Recovery 🔓<br>
-        • Fake Account & Content Removal 🔞<br>
-        • Cyber Bullying Protection 🛡️<br>
-        • Bot & API Engineering 🤖
-    </div>
-
-    <div class="box">
-        <span class="box-title">💰 PRICING & PAYMENT</span>
-        • DoB File: <span class="price">1000/- ৳</span><br>
-        • Without DoB: <span class="price">1500/- ৳</span><br>
-        • Payment (Advance): 01816731602 | 01737946032
-    </div>
-
-    <div class="box">
-        <span class="box-title">👥 OFFICIAL TEAM</span>
-        • 👑 <b>CEO:</b> Shiam Hossain<br>
-        • ⚡ <b>ADMIN:</b> Md Samir<br>
-        • 🛡️ <b>MODERATOR:</b> Jisan (EHB-BD-2025-R184)<br>
-        <div class="team-grid">
-            <div class="member">Ahamed</div> <div class="member">Ashraf Husain</div>
-            <div class="member">Endo Prime</div> <div class="member">Rabbi</div>
-            <div class="member">Nexus</div> <div class="member">Konok</div>
-            <div class="member">Sabbir</div> <div class="member">Ryven Noir</div>
-            <div class="member">Sakib X7</div> <div class="member">Sahida Afroj</div>
+    <h2 class="section-title"><i class="fas fa-chart-line"></i> SOCIAL MEDIA SERVICES</h2>
+    <div class="grid">
+        <div class="price-card">
+            <h3>TikTok Services</h3>
+            <div class="service-item"><span>Perm Removal</span> <span class="price">12000/-</span></div>
+            <div class="service-item"><span>Hacked Recovery</span> <span class="price">8000/-</span></div>
+            <div class="service-item"><span>Imposter Removal</span> <span class="price">3000/-</span></div>
+        </div>
+        <div class="price-card">
+            <h3>Telegram & Gmail</h3>
+            <div class="service-item"><span>Scam Removal</span> <span class="price">7000/-</span></div>
+            <div class="service-item"><span>Custom Bot</span> <span class="price">3000/-</span></div>
+            <div class="service-item"><span>Gmail Disabled Fix</span> <span class="price">2000/-</span></div>
+        </div>
+        <div class="price-card">
+            <h3>FB & Instagram</h3>
+            <div class="service-item"><span>FB Hacked Rec.</span> <span class="price">18000/-</span></div>
+            <div class="service-item"><span>IG Perm Rem.</span> <span class="price">15000/-</span></div>
+            <div class="service-item"><span>Meta Verify</span> <span class="price">1000/-</span></div>
         </div>
     </div>
 
-    <div class="box">
-        <span class="box-title">💻 TECH STACK</span>
-        • <b>Devices:</b> Samsung S24 Ultra | MacBook Pro M3 Max | Realme C71<br>
-        • <b>OS:</b> Kali Linux | Parrot OS | Windows 11
+    <h2 class="section-title"><i class="fas fa-user-slash"></i> ID REMOVAL Tiers</h2>
+    <div class="price-card">
+        <table class="removal-table">
+            <thead>
+                <tr>
+                    <th>Type</th>
+                    <th>With DoB</th>
+                    <th>Without DoB</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>General</td><td>400/-</td><td>800/-</td></tr>
+                <tr><td>Regular</td><td>300/-</td><td>650/-</td></tr>
+                <tr><td>Premium</td><td>250/-</td><td>550/-</td></tr>
+            </tbody>
+        </table>
     </div>
 
-    <div class="btn-container">
-        <a href="https://wa.me/8801816731602" class="btn"><i class="fab fa-whatsapp"></i> MESSAGE VIA WHATSAPP</a>
-        <a href="https://t.me/shiam405" class="btn btn-alt"><i class="fab fa-telegram"></i> TELEGRAM CHANNEL</a>
-        <a href="https://www.facebook.com/YOUR_FB_ID" class="btn btn-alt"><i class="fab fa-facebook"></i> FACEBOOK PROFILE</a>
+    <h2 class="section-title"><i class="fas fa-file-invoice-dollar"></i> FILE SELL & PAYMENT</h2>
+    <div class="grid">
+        <div class="price-card">
+            <h3>Imposter Files</h3>
+            <div class="service-item"><span>DoB File</span> <span class="price">1000/-</span></div>
+            <div class="service-item"><span>Without DoB File</span> <span class="price">1500/-</span></div>
+        </div>
+        <div class="price-card">
+            <h3>Payment Methods</h3>
+            <p>Bkash/Nagad: <b>01816731602</b></p>
+            <p>Bkash/Nagad: <b>01737946032</b></p>
+        </div>
     </div>
 
-    <div class="footer">
-        © 2026 Shiam Hossain Jidan | All Rights Reserved | CEO of EHB Official ❤️
+    <div class="btn-hub">
+        <a href="https://wa.me/8801816731602" class="btn">WHATSAPP</a>
+        <a href="https://t.me/shiam405" class="btn btn-alt">TELEGRAM</a>
     </div>
+
+    <footer style="text-align:center; padding:50px; color:#444; font-size:0.7em;">
+        © 2026 EHB Official | Built by CEO Asif Chowdhury
+    </footer>
 
 </body>
 </html>
