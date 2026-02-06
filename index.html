@@ -3,58 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asif Chowdhury | EHB CEO</title>
+    <title>Shiam Hossain Jidan | CEO EHB</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        :root { --cyan: #00ffcc; --dark: #0a0a0a; --gray: #1a1a1a; }
-        body { background-color: var(--dark); color: white; font-family: 'Courier New', monospace; margin: 0; text-align: center; }
+        :root { --cyan: #00ffcc; --dark: #0a0a0a; --gray: #151515; --neon: 0 0 10px #00ffcc; }
+        body { background: var(--dark); color: #ccc; font-family: 'Segoe UI', sans-serif; margin: 0; text-align: center; }
         
-        /* Hero Section */
-        .hero { padding: 60px 20px; background: radial-gradient(circle, #004433 0%, #0a0a0a 100%); }
-        .profile-img { width: 150px; height: 150px; border-radius: 50%; border: 3px solid var(--cyan); box-shadow: 0 0 20px var(--cyan); margin-bottom: 20px; }
-        h1 { font-size: 2.5em; text-transform: uppercase; letter-spacing: 3px; color: var(--cyan); text-shadow: 0 0 10px var(--cyan); }
+        /* Profile Header */
+        .hero { padding: 60px 20px; border-bottom: 1px solid #222; }
+        h1 { color: var(--cyan); text-shadow: var(--neon); letter-spacing: 2px; margin: 10px 0; }
+        .tag { color: white; background: #333; padding: 5px 15px; border-radius: 20px; font-size: 0.9em; }
+
+        /* Sections Layout */
+        .container { max-width: 900px; margin: auto; padding: 20px; }
+        .section-title { color: var(--cyan); text-align: left; border-bottom: 1px solid var(--cyan); display: inline-block; margin-bottom: 20px; }
         
-        /* Grid System */
-        .container { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; padding: 40px 20px; }
-        .card { background: var(--gray); padding: 25px; border-radius: 12px; border-left: 4px solid var(--cyan); transition: 0.3s; text-align: left; }
-        .card:hover { transform: translateY(-10px); background: #222; }
-        .card i { font-size: 2em; color: var(--cyan); margin-bottom: 15px; }
-        
-        /* Buttons */
-        .btn { display: inline-block; padding: 10px 25px; border: 1px solid var(--cyan); color: var(--cyan); text-decoration: none; border-radius: 5px; margin: 10px; transition: 0.3s; }
-        .btn:hover { background: var(--cyan); color: black; box-shadow: 0 0 15px var(--cyan); }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 15px; margin-bottom: 40px; }
+        .card { background: var(--gray); padding: 20px; border-radius: 10px; text-align: left; border: 1px solid #222; }
+        .card:hover { border-color: var(--cyan); box-shadow: var(--neon); }
+
+        /* Contact Buttons */
+        .btn-hub { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 20px; }
+        .btn { padding: 12px 25px; border-radius: 5px; text-decoration: none; font-weight: bold; color: black; background: var(--cyan); transition: 0.3s; }
+        .btn-alt { background: transparent; border: 1px solid var(--cyan); color: var(--cyan); }
+        .btn:hover { box-shadow: var(--neon); transform: scale(1.05); }
+
+        .footer { padding: 30px; border-top: 1px solid #222; font-size: 0.8em; color: #555; }
     </style>
 </head>
 <body>
 
     <section class="hero">
-        <img src="https://via.placeholder.com/150" alt="CEO Asif" class="profile-img"> <h1>SHIAM HOSSAIN JIDAN</h1>
+        <div style="font-size: 0.8em; color: var(--cyan);">[ INITIALIZING SYSTEM... ]</div>
+        <h1>SHIAM HOSSAIN JIDAN</h1>
         <p>CEO of Ethical Hacker-Bd Official (EHB)</p>
-        <p class="tag">SSC 2026 Candidate | Cyber Security Expert</p>
-        <a href="#" class="btn">CONTACT ME</a>
-        <a href="#" class="btn">VIEW WORK</a>
+        <span class="tag">SSC 2026 Candidate | Cyber Security Expert</span>
+        
+        <div class="btn-hub">
+            <a href="https://wa.me/8801816731602" class="btn"><i class="fab fa-whatsapp"></i> MESSAGE ME</a>
+            <a href="https://t.me/Asif_Chowdhury_EHB" class="btn btn-alt"><i class="fab fa-telegram"></i> TELEGRAM HUB</a>
+        </div>
     </section>
 
     <div class="container">
+        <h2 class="section-title">ABOUT ME</h2>
         <div class="card">
-            <i class="fas fa-shield-alt"></i>
-            <h3>Security Testing</h3>
-            <p>Comprehensive vulnerability assessment and system security auditing.</p>
+            <p><strong>Full Name:</strong> Shiam Hossain Jidan (Asif Chowdhury)</p>
+            <p><strong>Education:</strong> SSC 2026 Batch</p>
+            <p><strong>Home:</strong> Panchgarh | <strong>Current:</strong> Singapore 🇸🇬</p>
+            <p><strong>Expertise:</strong> Ethical Hacking, Bot Development, & Account Recovery.</p>
         </div>
-        <div class="card">
-            <i class="fas fa-code"></i>
-            <h3>App Development</h3>
-            <p>Security-focused application development and educational courses.</p>
+
+        <h2 class="section-title">MY BOTS & TOOLS</h2>
+        <div class="grid">
+            <div class="card">
+                <h3><i class="fas fa-robot"></i> EHB Forwarder</h3>
+                <p>WhatsApp automation system using Green API & UltraMsg.</p>
+            </div>
+            <div class="card">
+                <h3><i class="fas fa-heart"></i> Pair Bot</h3>
+                <p>Interactive group bot for Telegram entertainment.</p>
+            </div>
         </div>
-        <div class="card">
-            <i class="fas fa-user-check"></i>
-            <h3>Account Recovery</h3>
-            <p>Social media account recovery and content removal services.</p>
+
+        <h2 class="section-title">EHB OFFICIAL TEAM</h2>
+        <div class="grid">
+            <div class="card">
+                <h4>MD SAMIR</h4>
+                <p>Admin & Technical Lead</p>
+            </div>
+            <div class="card">
+                <h4>JISAN</h4>
+                <p>Moderator & Community Manager</p>
+            </div>
         </div>
     </div>
 
-    <footer style="padding: 20px; color: #555; font-size: 0.8em;">
-        &copy; 2026 Ethical Hacker-BD Official | Built with ❤️ for Cybersecurity
+    <footer class="footer">
+        &copy; 2026 Shiam Hossain Jidan | CEO of EHB Official | Built for Cybersecurity ❤️
     </footer>
 
 </body>
