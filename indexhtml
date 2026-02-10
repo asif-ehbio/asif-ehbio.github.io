@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asif Chowdhury | EHB CEO</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --neon: #00ffcc; --magenta: #ff00ff; --bg: #020205; }
+        body { background: radial-gradient(circle at top, #08081a 0%, var(--bg) 100%); color: #fff; font-family: 'Orbitron', sans-serif; margin: 0; padding: 20px; }
+        .hero { text-align: center; padding: 50px 0; border-bottom: 2px solid var(--neon); }
+        h1 { font-size: 2.2em; letter-spacing: 5px; background: linear-gradient(to right, var(--neon), var(--magenta)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .card { background: rgba(255,255,255,0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1); border-radius: 15px; padding: 25px; margin-bottom: 25px; }
+        .scammer-table { width: 100%; border-collapse: collapse; font-size: 0.8em; }
+        .scammer-table th { color: #f44; text-align: left; border-bottom: 2px solid #f44; padding: 12px; }
+        .scammer-table td { border-bottom: 1px solid #222; padding: 12px; }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>ASIF CHOWDHURY</h1>
+        <p>CEO, Ethical Hacker-Bd Official (EHB)</p>
+    </div>
+    <div class="container">
+        <div class="card">
+            <h3 style="color:var(--neon);">👤 IDENTITY ACCESS</h3>
+            <p>• <b>Full Name:</b> Shiam Hossain Jidan</p>
+            <p>• <b>Location:</b> Singapore 🇸🇬 | Dhaka | Panchgarh</p>
+            <p>• <b>Devices:</b> S24 Ultra, Realme C71, MacBook Pro M3 Max</p>
+        </div>
+        <div class="card" style="border-left: 5px solid #f44;">
+            <h3 style="color:#f44;">🚨 SCAMMER BLACKLIST</h3>
+            <div style="overflow-x: auto;">
+                <table class="scammer-table">
+                    <thead><tr><th>NAME</th><th>FB ID</th><th>PHONE</th><th>PAYMENT</th></tr></thead>
+                    <tbody>
+                        </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
