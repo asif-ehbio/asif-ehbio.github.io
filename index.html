@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asif Chowdhury | CEO of EHB</title>
+    <title>Asif Chowdhury | EHB Master Hub</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         :root { --neon: #00ffcc; --magenta: #ff00ff; --bg: #020205; --card: rgba(255, 255, 255, 0.05); }
@@ -13,17 +13,13 @@
         h1 { font-size: 2.2em; letter-spacing: 5px; color: var(--neon); text-shadow: 0 0 15px var(--neon); margin: 0; text-transform: uppercase; }
         .card { background: var(--card); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 15px; padding: 20px; margin-bottom: 20px; }
         h2 { color: var(--magenta); font-size: 1.1em; border-left: 4px solid var(--neon); padding-left: 12px; text-transform: uppercase; margin-bottom: 15px; }
-        
-        /* Grid Layouts */
         .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 15px; }
         table { width: 100%; border-collapse: collapse; font-size: 0.85em; }
         td { padding: 8px; border-bottom: 1px solid #222; }
         .price { text-align: right; color: var(--neon); font-weight: bold; }
-        
-        /* Form Styling */
         input, select, textarea { width: 100%; padding: 12px; margin-bottom: 10px; background: #000; border: 1px solid #333; color: #fff; border-radius: 5px; box-sizing: border-box; }
-        option { background: #111; color: #fff; }
         .order-btn { width: 100%; padding: 15px; background: var(--neon); color: #000; font-weight: bold; border: none; border-radius: 5px; cursor: pointer; text-transform: uppercase; }
+        .badge { background: #111; border: 1px solid #444; padding: 5px 10px; border-radius: 5px; font-size: 0.75em; margin: 3px; color: var(--neon); display: inline-block; }
     </style>
 </head>
 <body>
@@ -35,14 +31,20 @@
     </div>
 
     <div class="container">
+        <div class="card">
+            <h2>👤 IDENTITY & TECH STACK</h2>
+            <p>• <b>Full Name:</b> Shiam Hossain Jidan | <b>Birthday:</b> 22/01/2008</p>
+            <p>• <b>Skills:</b> Python, PHP, Java | Web & App Developer</p>
+            <p>• <b>Work at:</b> Gry Hat Hacker ⚡ | <b>Availability:</b> 20 Hours Online</p>
+        </div>
+
         <div class="grid">
             <div class="card">
-                <h2>🔹 FB & Instagram</h2>
+                <h2>🔹 Facebook & IG</h2>
                 <table>
-                    <tr><td>FB Hacked Recovery</td><td class="price">18000/-</td></tr>
+                    <tr><td>Hacked Recovery</td><td class="price">18000/-</td></tr>
                     <tr><td>IG Perm Removal</td><td class="price">15000/-</td></tr>
-                    <tr><td>FB Locked Fix</td><td class="price">1500/-</td></tr>
-                    <tr><td>IG Suspended Fix</td><td class="price">1400/-</td></tr>
+                    <tr><td>Locked / Suspended</td><td class="price">1500/-</td></tr>
                 </table>
             </div>
             <div class="card">
@@ -51,7 +53,6 @@
                     <tr><td>TG Scam Removal</td><td class="price">7000/-</td></tr>
                     <tr><td>Custom Bot Make</td><td class="price">3000/-</td></tr>
                     <tr><td>Gmail Disabled Fix</td><td class="price">2000/-</td></tr>
-                    <tr><td>Server Bypass</td><td class="price">2500/-</td></tr>
                 </table>
             </div>
         </div>
@@ -64,23 +65,32 @@
                 
                 <select id="serviceType" required>
                     <option value="">সার্ভিস বেছে নিন (Select Service)</option>
-                    <optgroup label="Facebook & IG">
+                    <optgroup label="Facebook Services">
                         <option value="FB Hacked Recovery">FB Hacked Recovery (18000/-)</option>
-                        <option value="IG Perm Removal">IG Perm Removal (15000/-)</option>
                         <option value="FB Locked Fix">FB Locked Fix (1500/-)</option>
-                        <option value="Meta Verify Setup">Meta Verify Setup (1000/-)</option>
+                        <option value="FB Fake Termination">FB Fake Account Term. (400/-)</option>
+                        <option value="FB Meta Verify">FB Meta Verify (700/-)</option>
                     </optgroup>
-                    <optgroup label="Telegram & Server">
+                    <optgroup label="Instagram Services">
+                        <option value="IG Perm Removal">IG Perm Removal (15000/-)</option>
+                        <option value="IG Suspended Fix">IG Suspended Fix (1400/-)</option>
+                        <option value="IG Meta Verify">IG Meta Verify (1000/-)</option>
+                    </optgroup>
+                    <optgroup label="Telegram & Gmail">
                         <option value="TG Scam Removal">TG Scam Removal (7000/-)</option>
                         <option value="Telegram Bot Make">Telegram Bot Make (3000/-)</option>
+                        <option value="TG API Setup">TG API Setup (2500/-)</option>
                         <option value="Gmail Disabled Fix">Gmail Disabled Fix (2000/-)</option>
-                        <option value="Server Fix">Server Fix (3000/-)</option>
+                        <option value="Gmail 2FA Bypass">Gmail 2FA Bypass (2500/-)</option>
                     </optgroup>
-                    <optgroup label="Files & Removal">
+                    <optgroup label="Imposter Files">
                         <option value="Imposter DOB File">Imposter DOB File (1000/-)</option>
                         <option value="Without DOB File">Without DOB File (1500/-)</option>
-                        <option value="General ID Removal">General ID Removal (400/-)</option>
+                    </optgroup>
+                    <optgroup label="Security & Other">
+                        <option value="Server Fix">Server Fix (3000/-)</option>
                         <option value="Video Removal">Video Removal (8000/-)</option>
+                        <option value="Takedown Service">Takedown Service (600/-)</option>
                     </optgroup>
                 </select>
 
@@ -89,10 +99,18 @@
             </form>
         </div>
 
+        <div class="card">
+            <h2>👥 EHB OFFICIAL ELITE TEAM</h2>
+            <p>👑 CEO: <b>Siam Hossain</b> | ⚡ ADMIN: <b>Md Samir</b> | 🛡️ MOD: <b>Jisan</b></p>
+            <div style="font-size: 0.8em;">
+                <span class="badge">Ahamed</span><span class="badge">Nexus</span><span class="badge">Rabbi</span><span class="badge">Sakib X7</span><span class="badge">Konok</span>
+            </div>
+            <p style="margin-top:15px; font-size: 0.85em;">💻 <b>Hardware:</b> S24 Ultra | MacBook Pro M3 Max | ASUS ROG Strix SCAR 18</p>
+        </div>
+
         <div class="card" style="text-align: center;">
-            <p>Admin: <b>Md Samir</b> | Mod: <b>Jisan</b></p>
-            <p>Hardware: <b>S24 Ultra</b> | <b>M3 Max</b> | <b>ROG Strix</b></p>
-            <p style="margin-top:10px;">Payment: <b>01816731602</b> (Bkash/Nagad)</p>
+            <p>Bkash/Nagad: <b>01816731602</b> | <b>01737946032</b></p>
+            <p style="font-size: 0.7em; color: #888;">© 2026 EHB OFFICIAL MASTER HUB | ETHICAL PURPOSES ONLY</p>
         </div>
     </div>
 
