@@ -6,111 +6,160 @@
     <title>Asif Chowdhury | EHB Master Hub</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        :root { --neon: #00ffcc; --magenta: #ff00ff; --bg: #020205; --card: rgba(255, 255, 255, 0.05); }
-        body { background: radial-gradient(circle at top, #08081a 0%, var(--bg) 100%); color: #e0e0e0; font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; }
-        .container { max-width: 1000px; margin: auto; padding: 20px; }
-        .hero { text-align: center; padding: 50px 20px; border-bottom: 2px solid var(--neon); }
-        h1 { font-size: 2.2em; letter-spacing: 5px; color: var(--neon); text-shadow: 0 0 15px var(--neon); margin: 0; text-transform: uppercase; }
-        .card { background: var(--card); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 15px; padding: 20px; margin-bottom: 20px; }
-        h2 { color: var(--magenta); font-size: 1.1em; border-left: 4px solid var(--neon); padding-left: 12px; text-transform: uppercase; margin-bottom: 15px; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 15px; }
-        table { width: 100%; border-collapse: collapse; font-size: 0.85em; }
-        td { padding: 8px; border-bottom: 1px solid #222; }
+        :root { --neon: #00ffcc; --magenta: #ff00ff; --bg: #020205; --card: rgba(255, 255, 255, 0.04); }
+        body { background: radial-gradient(circle at top, #08081a 0%, var(--bg) 100%); color: #e0e0e0; font-family: 'Courier New', monospace; margin: 0; padding: 0; }
+        .container { max-width: 1100px; margin: auto; padding: 15px; }
+        .hero { text-align: center; padding: 40px 20px; border-bottom: 2px solid var(--neon); }
+        h1 { font-size: 1.8em; letter-spacing: 3px; color: var(--neon); text-shadow: 0 0 10px var(--neon); margin: 0; }
+        .card { background: var(--card); backdrop-filter: blur(8px); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 10px; padding: 15px; margin-bottom: 15px; }
+        .section-title { color: var(--magenta); font-size: 1em; border-bottom: 1px solid #333; padding-bottom: 8px; margin-bottom: 12px; text-transform: uppercase; }
+        
+        /* Grid Layouts */
+        .grid-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 15px; }
+        .rate-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 10px; }
+        
+        table { width: 100%; border-collapse: collapse; font-size: 0.8em; }
+        td { padding: 8px; border-bottom: 1px dashed #222; }
         .price { text-align: right; color: var(--neon); font-weight: bold; }
-        input, select, textarea { width: 100%; padding: 12px; margin-bottom: 10px; background: #000; border: 1px solid #333; color: #fff; border-radius: 5px; box-sizing: border-box; }
-        .order-btn { width: 100%; padding: 15px; background: var(--neon); color: #000; font-weight: bold; border: none; border-radius: 5px; cursor: pointer; text-transform: uppercase; }
-        .badge { background: #111; border: 1px solid #444; padding: 5px 10px; border-radius: 5px; font-size: 0.75em; margin: 3px; color: var(--neon); display: inline-block; }
+        .label { color: var(--neon); font-weight: bold; }
+        .badge { background: #111; border: 1px solid #444; padding: 4px 8px; border-radius: 4px; font-size: 0.75em; margin: 2px; color: var(--neon); display: inline-block; }
+        
+        /* Form Styling */
+        input, select, textarea { width: 100%; padding: 10px; margin-bottom: 8px; background: #000; border: 1px solid #333; color: #fff; border-radius: 4px; box-sizing: border-box; font-family: inherit; }
+        .order-btn { width: 100%; padding: 12px; background: var(--neon); color: #000; font-weight: bold; border: none; border-radius: 4px; cursor: pointer; text-transform: uppercase; }
     </style>
 </head>
 <body>
     <div class="hero">
-        <p style="font-size: 0.6em; letter-spacing: 5px; color: var(--neon);">[ CEO INTERFACE ACTIVATED ]</p>
-        <h1>ASÍF CHOWDHURY</h1>
-        <p style="color: #888;">Founder & CEO, Ethical Hacker-Bd Official (EHB)</p>
-        <p style="font-size: 0.7em; color: var(--neon);">Singapore 🇸🇬 | Dhaka | Panchgarh</p>
+        <p style="font-size: 0.6em; letter-spacing: 5px; color: var(--neon);">🚀 PROFILE ACTIVATED</p>
+        <h1>ASIF CHOWDHURY</h1>
+        <p style="color: #888; font-size: 0.8em;">Founder & CEO, Ethical Hacker-Bd Official (EHB)</p>
     </div>
 
     <div class="container">
+        <div class="grid-container">
+            <div class="card">
+                <div class="section-title">👤 PERSONAL IDENTITY</div>
+                <p>• Full Name: Shiam Hossain Jidan</p>
+                <p>• Nickname: Asif Chowdhury</p>
+                <p>• Birthday: 22/01/2008</p>
+                <p>• Status: Student | Single 🔒</p>
+            </div>
+            <div class="card">
+                <div class="section-title">💻 TECH STACK & WORK</div>
+                <p>• Web & App Developer / Designer</p>
+                <p>• Bot Maker & Engineer 🤖</p>
+                <p>• Work at: Gry hat Hacker ⚡</p>
+                <p>• Coding: Python 🐍 | PHP | Java</p>
+            </div>
+        </div>
+
         <div class="card">
-            <h2>👤 IDENTITY & TECH STACK</h2>
-            <p>• <b>Full Name:</b> Shiam Hossain Jidan | <b>Birthday:</b> 22/01/2008</p>
-            <p>• <b>Skills:</b> Python, PHP, Java | Web & App Developer</p>
-            <p>• <b>Work at:</b> Gry Hat Hacker ⚡ | <b>Availability:</b> 20 Hours Online</p>
+            <div class="section-title">🛡️ EXPERT SECURITY & REMOVAL</div>
+            <div class="grid-container">
+                <div>
+                    <p class="label">🔥 Account Termination:</p>
+                    <p>• Harassment & Fake Account Removal</p>
+                    <p>• 18+ Sexual Content Removal 🔞</p>
+                </div>
+                <div>
+                    <p class="label">🔓 Server Based Recovery:</p>
+                    <p>• FB/IG: Disabled & Locked</p>
+                    <p>• Suspended & Hacked Account Fix</p>
+                </div>
+            </div>
         </div>
 
-        <div class="grid">
+        <div class="rate-grid">
             <div class="card">
-                <h2>🔹 Facebook & IG</h2>
+                <div class="section-title">✈️ TELEGRAM RATES</div>
                 <table>
+                    <tr><td>Scam Removal</td><td class="price">7000/-</td></tr>
+                    <tr><td>Custom Bot</td><td class="price">3000/-</td></tr>
+                    <tr><td>API Setup</td><td class="price">2500/-</td></tr>
+                </table>
+            </div>
+            <div class="card">
+                <div class="section-title">🔸 INSTAGRAM RATES</div>
+                <table>
+                    <tr><td>Perm Removal</td><td class="price">15000/-</td></tr>
+                    <tr><td>Suspended Fix</td><td class="price">1400/-</td></tr>
+                    <tr><td>Meta Verify</td><td class="price">1000/-</td></tr>
+                </table>
+            </div>
+            <div class="card">
+                <div class="section-title">🔹 FACEBOOK RATES</div>
+                <table>
+                    <tr><td>Locked Recovery</td><td class="price">1500/-</td></tr>
                     <tr><td>Hacked Recovery</td><td class="price">18000/-</td></tr>
-                    <tr><td>IG Perm Removal</td><td class="price">15000/-</td></tr>
-                    <tr><td>Locked / Suspended</td><td class="price">1500/-</td></tr>
+                    <tr><td>Fake (DoB)</td><td class="price">400/-</td></tr>
                 </table>
             </div>
             <div class="card">
-                <h2>✈️ Telegram & Gmail</h2>
+                <div class="section-title">📂 IMPOSTER FILES</div>
                 <table>
-                    <tr><td>TG Scam Removal</td><td class="price">7000/-</td></tr>
-                    <tr><td>Custom Bot Make</td><td class="price">3000/-</td></tr>
-                    <tr><td>Gmail Disabled Fix</td><td class="price">2000/-</td></tr>
+                    <tr><td>Dob File</td><td class="price">1000/-</td></tr>
+                    <tr><td>Without Dob</td><td class="price">1500/-</td></tr>
+                    <tr><td colspan="2" style="font-size:0.7em; color:#888;">⚠️ Fixed Price (No Bargain)</td></tr>
                 </table>
             </div>
         </div>
 
-        <div class="card" style="border: 2px solid var(--neon);">
-            <h2 style="text-align: center; border:none;">🛒 QUICK ORDER SYSTEM</h2>
-            <form id="orderForm">
-                <input type="text" id="custName" placeholder="আপনার নাম (Your Name)" required>
-                <input type="number" id="custPhone" placeholder="ফোন নম্বর (WhatsApp No)" required>
-                
-                <select id="serviceType" required>
-                    <option value="">সার্ভিস বেছে নিন (Select Service)</option>
-                    <optgroup label="Facebook Services">
-                        <option value="FB Hacked Recovery">FB Hacked Recovery (18000/-)</option>
-                        <option value="FB Locked Fix">FB Locked Fix (1500/-)</option>
-                        <option value="FB Fake Termination">FB Fake Account Term. (400/-)</option>
-                        <option value="FB Meta Verify">FB Meta Verify (700/-)</option>
-                    </optgroup>
-                    <optgroup label="Instagram Services">
-                        <option value="IG Perm Removal">IG Perm Removal (15000/-)</option>
-                        <option value="IG Suspended Fix">IG Suspended Fix (1400/-)</option>
-                        <option value="IG Meta Verify">IG Meta Verify (1000/-)</option>
-                    </optgroup>
-                    <optgroup label="Telegram & Gmail">
-                        <option value="TG Scam Removal">TG Scam Removal (7000/-)</option>
-                        <option value="Telegram Bot Make">Telegram Bot Make (3000/-)</option>
-                        <option value="TG API Setup">TG API Setup (2500/-)</option>
-                        <option value="Gmail Disabled Fix">Gmail Disabled Fix (2000/-)</option>
-                        <option value="Gmail 2FA Bypass">Gmail 2FA Bypass (2500/-)</option>
-                    </optgroup>
-                    <optgroup label="Imposter Files">
-                        <option value="Imposter DOB File">Imposter DOB File (1000/-)</option>
-                        <option value="Without DOB File">Without DOB File (1500/-)</option>
-                    </optgroup>
-                    <optgroup label="Security & Other">
-                        <option value="Server Fix">Server Fix (3000/-)</option>
-                        <option value="Video Removal">Video Removal (8000/-)</option>
-                        <option value="Takedown Service">Takedown Service (600/-)</option>
-                    </optgroup>
-                </select>
+        <div class="grid-container">
+            <div class="card">
+                <div class="section-title">🕒 AVAILABILITY</div>
+                <p>• Active: 07:00 AM – 03:00 AM ⚡</p>
+                <p>• Status: 20 Hours Online 🚀</p>
+                <p>• Namaz Break: Every Waqt 🕋</p>
+            </div>
+            <div class="card">
+                <div class="section-title">📞 CONTACT</div>
+                <p>• WhatsApp: +8801816731602</p>
+                <p>• Telegram: @shiam405</p>
+                <p>• Email: ethicalhacker.bd.official@gmail.com</p>
+            </div>
+        </div>
 
-                <textarea id="custDetails" rows="2" placeholder="অর্ডারের বিস্তারিত (Details)..."></textarea>
-                <button type="button" class="order-btn" onclick="sendToWhatsApp()">Submit Order on WhatsApp</button>
+        <div class="card" style="border: 1px solid var(--neon);">
+            <div class="section-title" style="text-align:center;">🛒 QUICK ORDER SYSTEM</div>
+            <form id="orderForm">
+                <input type="text" id="custName" placeholder="Name" required>
+                <input type="number" id="custPhone" placeholder="WhatsApp Number" required>
+                <select id="serviceType" required>
+                    <option value="">Select Service</option>
+                    <option value="Hacked Recovery">Hacked Recovery (FB/IG)</option>
+                    <option value="Perm Removal">Permanent Removal</option>
+                    <option value="Imposter DOB File">Imposter DOB File</option>
+                    <option value="Custom Bot">Telegram Bot Make</option>
+                </select>
+                <textarea id="custDetails" rows="2" placeholder="Details..."></textarea>
+                <button type="button" class="order-btn" onclick="sendToWhatsApp()">Submit on WhatsApp</button>
             </form>
         </div>
 
         <div class="card">
-            <h2>👥 EHB OFFICIAL ELITE TEAM</h2>
+            <div class="section-title">👥 OUR OFFICIAL ELITE TEAM</div>
             <p>👑 CEO: <b>Siam Hossain</b> | ⚡ ADMIN: <b>Md Samir</b> | 🛡️ MOD: <b>Jisan</b></p>
-            <div style="font-size: 0.8em;">
-                <span class="badge">Ahamed</span><span class="badge">Nexus</span><span class="badge">Rabbi</span><span class="badge">Sakib X7</span><span class="badge">Konok</span>
+            <div style="font-size: 0.75em;">
+                <span class="badge">Ahamed</span> <span class="badge">Ashraf Husain</span> <span class="badge">Endo Prime</span>
+                <span class="badge">Rabbi</span> <span class="badge">Nexus</span> <span class="badge">Priyonety Chakma</span>
+                <span class="badge">Sakib X7</span> <span class="badge">Sahida Afroj</span> <span class="badge">Daduuuu</span>
+                <span class="badge">Sabbir</span> <span class="badge">Konok</span> <span class="badge">Ryven Noir</span>
             </div>
-            <p style="margin-top:15px; font-size: 0.85em;">💻 <b>Hardware:</b> S24 Ultra | MacBook Pro M3 Max | ASUS ROG Strix SCAR 18</p>
+        </div>
+
+        <div class="card">
+            <div class="section-title">📱 DEVICES & HARDWARE</div>
+            <p>• Phones: S24 Ultra, iPhone X, Realme C71, Poco M2</p>
+            <p>• Laptops: MacBook Pro M3 Max, ASUS ROG Strix SCAR 18</p>
+            <p>• PC Rig: Alienware Aurora R16 (RTX 4090)</p>
         </div>
 
         <div class="card" style="text-align: center;">
+            <div class="section-title">💳 PAYMENT & LEGAL</div>
             <p>Bkash/Nagad: <b>01816731602</b> | <b>01737946032</b></p>
-            <p style="font-size: 0.7em; color: #888;">© 2026 EHB OFFICIAL MASTER HUB | ETHICAL PURPOSES ONLY</p>
+            <p style="font-size: 0.7em; color: #888;">Home: Panchgarh | Base: Dhaka | Current: Singapore 🇸🇬</p>
+            <p style="font-size: 0.6em; margin-top:10px;">All services for ethical purposes only. © 2026 EHB Master Hub.</p>
         </div>
     </div>
 
