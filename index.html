@@ -3,99 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asif Chowdhury | EHB Hub v130</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Asif Chowdhury | EHB Master Hub</title>
     <style>
-        :root { --neon: #00ffcc; --magenta: #ff00ff; --dark: #020205; --card: rgba(255, 255, 255, 0.05); }
-        body { background: radial-gradient(circle at top, #08081a 0%, var(--dark) 100%); color: #e0e0e0; font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; }
-        .container { max-width: 1000px; margin: auto; padding: 20px; }
-        
-        /* News Ticker */
-        .ticker { background: #111; color: var(--neon); padding: 10px; overflow: hidden; white-space: nowrap; border-bottom: 1px solid var(--neon); font-size: 0.8em; }
-        .ticker marquee { width: 100%; }
-
-        .hero { text-align: center; padding: 60px 20px; }
-        h1 { font-size: 2.5em; letter-spacing: 5px; color: var(--neon); text-shadow: 0 0 15px var(--neon); margin: 0; }
-        .card { background: var(--card); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 15px; padding: 25px; margin-bottom: 25px; }
-        h2 { color: var(--magenta); font-size: 1.2em; border-left: 4px solid var(--neon); padding-left: 12px; text-transform: uppercase; }
-
-        /* Tables & Lists */
-        table { width: 100%; border-collapse: collapse; font-size: 0.85em; }
-        td { padding: 10px; border-bottom: 1px solid #222; }
-        .price { text-align: right; color: var(--neon); font-weight: bold; }
-        
-        /* Grid Layout */
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
-        .badge { background: #222; border: 1px solid #444; padding: 5px 12px; border-radius: 5px; font-size: 0.75em; margin: 3px; color: var(--neon); display: inline-block; }
-        
-        .faq-item { margin-bottom: 10px; font-size: 0.9em; }
-        .faq-item b { color: var(--neon); }
+        :root { --neon: #00ffcc; --magenta: #ff00ff; --bg: #050505; }
+        body { background-color: var(--bg); color: #fff; font-family: 'Segoe UI', sans-serif; margin: 0; padding: 15px; }
+        .container { max-width: 850px; margin: auto; }
+        .header { text-align: center; border-bottom: 2px solid var(--neon); padding-bottom: 20px; margin-bottom: 25px; }
+        h1 { color: var(--neon); font-size: 2em; letter-spacing: 3px; margin: 0; }
+        .card { background: #111; border: 1px solid #222; border-radius: 12px; padding: 20px; margin-bottom: 20px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        td { padding: 12px; border-bottom: 1px solid #222; font-size: 0.9em; }
+        .price { color: var(--neon); font-weight: bold; text-align: right; }
+        input, select, textarea { width: 100%; padding: 12px; margin-bottom: 10px; background: #000; border: 1px solid #333; color: #fff; border-radius: 5px; box-sizing: border-box; }
+        .order-btn { width: 100%; padding: 15px; background: var(--neon); color: #000; font-weight: bold; border: none; border-radius: 5px; cursor: pointer; text-transform: uppercase; }
     </style>
 </head>
 <body>
-    <div class="ticker">
-        <marquee>🚀 [ALERT] New Scammers added to Blacklist | Active Services: FB Recovery, ID Removal, Graphics | WhatsApp Active: 01816731602</marquee>
-    </div>
-
-    <div class="hero">
+    <div class="header">
         <h1>ASÍF CHOWDHURY</h1>
-        <p style="color: #888;">CEO, Ethical Hacker-Bd Official (EHB)</p>
-        <p style="font-size: 0.7em;">Singapore 🇸🇬 | Dhaka | Panchgarh</p>
+        <p style="color:#888;">CEO OF ETHICAL HACKER-BD OFFICIAL (EHB)</p>
+        <p style="font-size: 0.7em; color: var(--neon);">Singapore 🇸🇬 | Dhaka | Panchgarh</p>
     </div>
 
     <div class="container">
         <div class="card">
-            <h2>👤 IDENTITY ACCESS</h2>
-            <p>• <b>Full Name:</b> Shiam Hossain Jidan</p>
-            <p>• <b>Birthday:</b> 22/01/2008</p>
-            <p>• <b>Status:</b> SSC 2026 Candidate | Single</p>
-            <p>• <b>Hardware:</b> S24 Ultra, MacBook Pro M3 Max, ASUS ROG Strix SCAR 18</p>
+            <h3 style="color:var(--magenta); margin-top:0;">💰 SERVICE & FILE RATES</h3>
+            <table>
+                <tr><td>FB Hacked Recovery</td><td class="price">18000/-</td></tr>
+                <tr><td>TikTok Perm Removal</td><td class="price">12000/-</td></tr>
+                <tr><td>Imposter DOB File</td><td class="price">1000/-</td></tr>
+                <tr><td>Without DOB File</td><td class="price">1500/-</td></tr>
+                <tr><td>Premium ID Removal</td><td class="price">550/-</td></tr>
+            </table>
         </div>
 
-        <div class="grid">
-            <div class="card">
-                <h2>💰 SERVICE RATES</h2>
-                <table>
-                    <tr><td>FB Hacked Recovery</td><td class="price">18000/-</td></tr>
-                    <tr><td>IG Perm Removal</td><td class="price">15000/-</td></tr>
-                    <tr><td>TikTok Perm Removal</td><td class="price">12000/-</td></tr>
-                    <tr><td>Gmail Disabled Fix</td><td class="price">2000/-</td></tr>
-                </table>
-            </div>
-            <div class="card">
-                <h2>📂 FILE RATES</h2>
-                <table>
-                    <tr><td>Imposter DOB File</td><td class="price">1000/-</td></tr>
-                    <tr><td>Without DOB File</td><td class="price">1500/-</td></tr>
-                    <tr><td>ID Removal (Premium)</td><td class="price">550/-</td></tr>
-                    <tr><td>Telegram Bot Make</td><td class="price">3000/-</td></tr>
-                </table>
-            </div>
+        <div class="card" style="border: 1px solid var(--neon);">
+            <h3 style="color:var(--neon); text-align:center;">🛒 QUICK ORDER</h3>
+            <form id="orderForm">
+                <input type="text" id="custName" placeholder="আপনার নাম (Your Name)" required>
+                <input type="number" id="custPhone" placeholder="আপনার ফোন নম্বর (Phone Number)" required>
+                <select id="serviceType" required>
+                    <option value="">সার্ভিস বেছে নিন (Select Service)</option>
+                    <option value="FB Recovery">FB Hacked Recovery</option>
+                    <option value="ID Removal">ID Removal (Report)</option>
+                    <option value="DOB File">DOB File Service</option>
+                </select>
+                <textarea id="custDetails" rows="2" placeholder="বিস্তারিত লিখুন (Details)..."></textarea>
+                <button type="button" class="order-btn" onclick="sendToWhatsApp()">Submit Order on WhatsApp</button>
+            </form>
         </div>
 
-        <div class="grid">
-            <div class="card">
-                <h2>👥 EHB ELITE TEAM</h2>
-                <p><b>CEO:</b> Siam Hossain | <b>ADMIN:</b> Md Samir | <b>MOD:</b> Jisan</p>
-                <div class="badge">NEXUS</div><div class="badge">KONOK</div><div class="badge">RABBI</div><div class="badge">AHAMED</div>
-            </div>
-            <div class="card">
-                <h2>⭐ CLIENT REVIEWS</h2>
-                <div class="faq-item">"খুব দ্রুত রিকভারি হয়েছে। ইমারজেন্সি কাজের জন্য সেরা!" - <b>Sabbir Ahmed</b></div>
-                <div class="faq-item">"EHB Team best for security setup." - <b>Tanvir Sheikh</b></div>
-            </div>
-        </div>
-
-        <div class="card">
-            <h2>❓ FREQUENTLY ASKED QUESTIONS</h2>
-            <div class="faq-item"><b>Q: কত সময় লাগে?</b><br>A: সাধারণত ৩-২৪ ঘণ্টার মধ্যে কাজ সম্পন্ন হয়।</div>
-            <div class="faq-item"><b>Q: পেমেন্ট মেথড কী?</b><br>A: বিকাশ ও নগদ (Personal)। ০১৮১৬৭৩১৬০২</div>
-        </div>
-
-        <div class="card" style="border-left: 5px solid #f44;">
-            <h2 style="color:#f44; border-left:none;">🛡️ TERMS & POLICIES</h2>
-            <p style="font-size: 0.8em; color: #888;">• পেমেন্টের পর স্ক্রিনশট বাধ্যতামূলক।<br>• কোনো ইললিগাল কাজে EHB সহযোগিতা করে না।<br>• কাজ শুরু হয়ে গেলে কোনো রিফান্ড হবে না।</p>
+        <div class="card" style="text-align: center;">
+            <p>Admin: <b>Md Samir</b> | Mod: <b>Jisan</b></p>
+            <p>Payment: <b>01816731602</b></p>
         </div>
     </div>
+
+    <script>
+        function sendToWhatsApp() {
+            const name = document.getElementById('custName').value;
+            const phone = document.getElementById('custPhone').value;
+            const service = document.getElementById('serviceType').value;
+            const details = document.getElementById('custDetails').value;
+            const msg = `🚀 *NEW EHB ORDER*%0A%0A*Name:* ${name}%0A*Phone:* ${phone}%0A*Service:* ${service}%0A*Details:* ${details}`;
+            window.open(`https://wa.me/8801816731602?text=${msg}`, '_blank');
+        }
+    </script>
 </body>
 </html>
