@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EHB | Report Generator</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <style>
+        body { background-color: #000; color: #fff; font-family: 'Roboto', sans-serif; margin: 0; padding: 20px; display: flex; flex-direction: column; align-items: center; }
+        #email-container { background-color: #121212; width: 100%; max-width: 400px; padding: 20px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.5); }
+        .header { display: flex; align-items: center; margin-bottom: 20px; }
+        .avatar { width: 45px; height: 45px; background-color: #f1c40f; color: #000; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 20px; margin-right: 15px; }
+        .subject { font-size: 18px; font-weight: bold; margin-bottom: 5px; color: #e8eaed; }
+        .meta-info { font-size: 14px; color: #9aa0a6; }
+        .content { font-size: 15px; line-height: 1.5; color: #bdc1c6; border-top: 1px solid #333; padding-top: 20px; }
+        .editable { outline: none; border-bottom: 1px dashed transparent; transition: 0.3s; }
+        .editable:focus { border-bottom: 1px dashed #00ffcc; color: #fff; }
+        .btn-container { margin-top: 30px; display: flex; gap: 10px; }
+        button { background-color: #00ffcc; color: #000; border: none; padding: 12px 25px; border-radius: 25px; font-weight: bold; cursor: pointer; transition: 0.3s; }
+        button:active { transform: scale(0.95); }
+    </style>
+</head>
+<body>
+
+    <div id="email-container">
+        <div class="subject editable" contenteditable="true">Copyright Report Form #2002879223624039</div>
+        
+        <div class="header">
+            <div class="avatar">F</div>
+            <div>
+                <div class="meta-info"><b>Facebook</b> <span class="editable" contenteditable="true">Yesterday</span></div>
+                <div class="meta-info">to me ▾</div>
+            </div>
+        </div>
+
+        <div class="content editable" contenteditable="true">
+            Thanks for contacting us.<br><br>
+            Our technology reviewed your report and found that your content has already been removed, which we understand to resolve this report.<br><br>
+            If you'd like to report something else, please submit a new report. Reference: <span style="color:#8ab4f8;">#2002879223624039</span>.<br><br>
+            Thanks,<br>
+            Meta
+        </div>
+    </div>
+
+    <div class="btn-container">
+        <button onclick="takeScreenshot()">📸 SAVE TO GALLERY</button>
+    </div>
+
+    <script>
+        function takeScreenshot() {
+            const container = document.getElementById('email-container');
+            html2canvas(container, { backgroundColor: '#121212', scale: 2 }).then(canvas => {
+                const link = document.createElement('a');
+                link.download = 'EHB-Report-' + Date.now() + '.png';
+                link.href = canvas.toDataURL("image/png");
+                link.click();
+            });
+        }
+    </script>
+</body>
+</html>
